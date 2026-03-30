@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timmy Sheppel | Resume</title>
+    <meta
+      name="description"
+      content="Resume highlights and skills for Timmy Sheppel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html">Timmy Sheppel</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="./index.html#about">About</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./resume.html">Resume</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container page-intro">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <p>View or download the full PDF below.</p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="resume-actions">
+          <a class="btn btn-primary" href="./assets/documents/resume.pdf" download>Download PDF</a>
+          <a
+            class="btn btn-ghost"
+            href="./assets/documents/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open PDF in new tab</a>
+        </div>
+        <div class="resume-pdf-wrap">
+          <iframe
+            class="resume-pdf"
+            title="Timmy Sheppel resume (PDF)"
+            src="./assets/documents/resume.pdf"
+          ></iframe>
+        </div>
+        <p class="resume-pdf-fallback">
+          If the preview does not load, use <strong>Download PDF</strong> or <strong>Open in new tab</strong> above.
+        </p>
+      </section>
+
+      <section class="section container">
+        <div class="section-head">
+          <h2>Key skills</h2>
+        </div>
+        <ul class="skill-list">
+          <li>Organizational Strategy</li>
+          <li>Industrial and Organizational Psychology</li>
+          <li>Data Analytics</li>
+          <li>Research Methods and Design</li>
+          <li>Decision Science</li>
+          <li>Design Thinking</li>
+          <li>Iterative Prototyping</li>
+          <li>User Research</li>
+          <li>Management and Leadership</li>
+          <li>Complex Problem-Solving</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Timmy Sheppel. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

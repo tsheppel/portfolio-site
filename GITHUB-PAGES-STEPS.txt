@@ -1,0 +1,32 @@
+Publishing this site on GitHub (GitHub Pages)
+=============================================
+
+1) Create a new repository on GitHub
+   - Go to https://github.com/new
+   - Name it (e.g. portfolio-site)
+   - Leave "Add a README" UNCHECKED if you already have files locally
+   - Create repository
+
+2) From this folder in PowerShell, connect and push (replace YOUR_USER and YOUR_REPO):
+
+   git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
+   git push -u origin main
+
+   If GitHub shows "git push -u origin master", use that branch name instead of main.
+
+3) Turn on GitHub Pages
+   - Open the repo on GitHub → Settings → Pages (left sidebar)
+   - Under "Build and deployment" → Source: Deploy from a branch
+   - Branch: main (or master) → folder: / (root) → Save
+
+4) Your site URL (after 1–2 minutes)
+   - https://YOUR_USER.github.io/YOUR_REPO/
+   - Home page is index.html; Portfolio is /portfolio.html
+
+Notes
+-----
+- Large videos/binary assets count toward repo limits; Git LFS is optional for big files.
+- PowerPoint/Office embeds need this HTTPS URL to load (not file://).
+- First-time git on this PC: run once
+    git config --global user.name "Your Name"
+    git config --global user.email "you@example.com"

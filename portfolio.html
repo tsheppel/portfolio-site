@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timmy Sheppel | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio projects by Timmy Sheppel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html">Timmy Sheppel</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="./index.html#about">About</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./resume.html">Resume</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="current-projects">
+        <div class="section-head">
+          <h2>Current Projects</h2>
+        </div>
+        <div class="grid cards current-projects-cards">
+          <article class="card">
+            <div style="text-align: center;">
+              <h2>Habit Tracking App</h2>
+              <p class="project-subtitle"><strong>Vibe Coding Project</strong></p>
+              <p>(January 2026 - Present)</p>
+            </div>
+            <video class="project-video" controls preload="metadata" playsinline>
+              <source src="./assets/videos/Sequence01.mp4" type="video/mp4" />
+              Your browser does not support embedded videos.
+            </video>
+            <p>
+              Prototyped a proof of concept gamified habit tracking app on excel before using Gemini and Cursor to build it into a web app using HTML, CSS, JavaScript, React, and Electron.
+            </p>
+          </article>
+          <article class="card">
+            <div style="text-align: center;">
+            <h2>NASA ISS Partnership</h2>
+            <p class="project-subtitle"><strong>Design Sprint</strong></p>
+            <p>(January 2026 - Present)</p>
+            </div>
+            <img src="./assets/images/nasaLogo.png" alt="NASA ISS Partnership project image" class="project-video" style="object-fit:cover;"/>
+            <p>
+              Working with the NASA International Space Station (ISS) team to design a new partnership model for low earth orbit (LEO).              
+            </p>
+            <em>Disclaimer: This project is not paid and is primarily for educational purposes and collaboration with the NASA ISS team.</em>
+          </article>
+          <article class="card">
+            <div style="text-align: center;">
+              <h2>Human Agency Index Project</h2>
+              <p class="project-subtitle"><strong>Good Interventions '26 Design Competition</strong></p>
+              <a href="https://event.newschool.edu/goodinterventions26opencall" target="_blank" rel="noopener noreferrer">
+                Exhibition Link
+              </a>
+              <p>(October 2025 - Present)</p>
+            </div>
+            <img src="./assets/images/HAI.png" alt="Human Agency Index project image" class="project-video" style="object-fit:cover;"/>
+            <p>
+              Working with a teammate, Layoon Kim, to design a new index for companies and organizations to measure and improve human agency in the integration of AI tools.
+            </p>
+          </article>
+        </div>
+
+        <article class="card current-projects-presentation analytics-expandable-card" data-analytics-expandable>
+          <div class="analytics-card-top">
+            <div class="project-head analytics-card-preview">
+              <h2>Human Agency Index</h2>
+              <p class="project-subtitle"><strong>Presentation &amp; research paper</strong></p>
+              <p>Expand for slide deck and research paper previews. PDFs load locally; Office embeds work best on deployed HTTPS.</p>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary analytics-toggle"
+              aria-expanded="false"
+              aria-controls="hai-index-materials-expandable"
+            >
+              Expand
+            </button>
+          </div>
+          <div id="hai-index-materials-expandable" class="analytics-expandable-body" hidden>
+            <p class="card-lead">
+              For each deliverable, placing a <strong>PDF export</strong> next to the Office file gives a reliable in-page preview
+              (including on <code>localhost</code>). Without PDFs, Microsoft’s Office viewer loads the <code>.pptx</code> and
+              <code>.docx</code> when the site is served at a public <code>https</code> URL — not from <code>file://</code>.
+            </p>
+            <p class="ppt-embed-hint deck-preview-warn" data-deck-warn="file" hidden>
+              Open this site through a local server or deploy it — embedded previews do not run from a saved <code>file://</code>
+              page. Use <strong>Open .pptx</strong> or <strong>Open .docx</strong> below.
+            </p>
+            <p class="ppt-embed-hint deck-preview-warn" data-deck-warn="local" hidden>
+              Microsoft’s viewer often cannot reach <code>localhost</code>. Add PDFs next to your files for in-page previews here,
+              or test Office embeds after you deploy to HTTPS.
+            </p>
+
+            <section class="hai-material-block" aria-labelledby="hai-pres-heading">
+              <h3 class="r-preview-heading" id="hai-pres-heading">Presentation</h3>
+              <p class="ppt-embed-hint">
+                <code>human-agency-index-presentation.pptx</code> and optional
+                <code>human-agency-index-presentation.pdf</code>
+              </p>
+              <div class="ppt-embed-wrap">
+                <iframe
+                  class="ppt-preview-frame"
+                  title="Human Agency Index presentation preview"
+                  data-deck-preview
+                  data-deck-pdf="./assets/documents/human-agency-index/human-agency-index-presentation.pdf"
+                  data-deck-pptx="./assets/documents/human-agency-index/human-agency-index-presentation.pptx"
+                ></iframe>
+              </div>
+              <div class="r-preview-actions">
+                <a
+                  class="btn btn-primary"
+                  href="./assets/documents/human-agency-index/human-agency-index-presentation.pptx"
+                  download
+                  >Download .pptx</a>
+                <a
+                  class="btn btn-ghost"
+                  href="./assets/documents/human-agency-index/human-agency-index-presentation.pptx"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Open .pptx</a>
+                <a
+                  class="btn btn-ghost"
+                  href="./assets/documents/human-agency-index/human-agency-index-presentation.pdf"
+                  download
+                  >Download PDF</a>
+              </div>
+            </section>
+
+            <section class="hai-material-block" aria-labelledby="hai-paper-heading">
+              <h3 class="r-preview-heading" id="hai-paper-heading">Research paper</h3>
+              <p class="ppt-embed-hint">
+                <code>human-agency-index-research-paper.docx</code> and optional
+                <code>human-agency-index-research-paper.pdf</code>
+              </p>
+              <div class="ppt-embed-wrap">
+                <iframe
+                  class="ppt-preview-frame"
+                  title="Human Agency Index research paper preview"
+                  data-deck-preview
+                  data-deck-pdf="./assets/documents/human-agency-index/human-agency-index-research-paper.pdf"
+                  data-deck-docx="./assets/documents/human-agency-index/human-agency-index-research-paper.docx"
+                ></iframe>
+              </div>
+              <div class="r-preview-actions">
+                <a
+                  class="btn btn-primary"
+                  href="./assets/documents/human-agency-index/human-agency-index-research-paper.docx"
+                  download
+                  >Download .docx</a>
+                <a
+                  class="btn btn-ghost"
+                  href="./assets/documents/human-agency-index/human-agency-index-research-paper.docx"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Open .docx</a>
+                <a
+                  class="btn btn-ghost"
+                  href="./assets/documents/human-agency-index/human-agency-index-research-paper.pdf"
+                  download
+                  >Download PDF</a>
+              </div>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <section class="section container" id="data-analytics">
+        <div class="section-head">
+          <h2>Data Analytics</h2>
+          <p>Python notebooks and R analysis with full-width previews.</p>
+        </div>
+        <div class="grid cards">
+          <article class="card card-span-full analytics-expandable-card" data-analytics-expandable>
+            <div class="analytics-card-top">
+              <div class="project-head analytics-card-preview">
+                <h2>R Data Analytics</h2>
+                <p class="project-subtitle"><strong>Linear regression report</strong></p>
+                <p>Knitted HTML report and PDF from an R / R Markdown workflow.</p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary analytics-toggle"
+                aria-expanded="false"
+                aria-controls="r-analytics-expandable-portfolio"
+              >
+                Expand
+              </button>
+            </div>
+            <div id="r-analytics-expandable-portfolio" class="analytics-expandable-body" hidden>
+            <section class="r-project-section" aria-labelledby="r-linear-portfolio-heading">
+              <h3 class="r-preview-heading" id="r-linear-portfolio-heading">Linear regression project</h3>
+              <div class="r-deliverables-stack">
+                <div class="r-deliverable">
+                  <h4 class="r-preview-heading">PDF report</h4>
+                  <div class="resume-pdf-wrap r-pdf-fullwidth">
+                    <iframe
+                      class="resume-pdf r-pdf-iframe"
+                      title="Linear regression PDF report"
+                      src="./assets/documents/r-linear-regression/linear-regression-report.pdf#view=FitH"
+                    ></iframe>
+                  </div>
+                  <p class="r-preview-fallback">
+                    If the PDF does not show here, open it in a new tab.
+                  </p>
+                  <div class="r-preview-actions">
+                    <a class="btn btn-primary" href="./assets/documents/r-linear-regression/linear-regression-report.pdf" download>Download PDF</a>
+                    <a class="btn btn-ghost" href="./assets/documents/r-linear-regression/linear-regression-report.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+                  </div>
+                </div>
+                <div class="r-deliverable">
+                  <h4 class="r-preview-heading">Knitted HTML report</h4>
+                  <div class="html-knit-preview-wrap">
+                    <iframe
+                      class="html-knit-preview-frame"
+                      title="Linear regression knitted HTML report"
+                      src="./assets/documents/r-linear-regression/linear-regression-report.html"
+                      loading="lazy"
+                      sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                    ></iframe>
+                  </div>
+                  <p class="r-preview-fallback">
+                    If interactive elements are blocked, use Open HTML to view in a full tab.
+                  </p>
+                  <div class="r-preview-actions">
+                    <a class="btn btn-primary" href="./assets/documents/r-linear-regression/linear-regression-report.html" download>Download HTML</a>
+                    <a class="btn btn-ghost" href="./assets/documents/r-linear-regression/linear-regression-report.html" target="_blank" rel="noreferrer">Open HTML</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            </div>
+          </article>
+
+          <article class="card card-span-full analytics-expandable-card" data-analytics-expandable>
+            <div class="analytics-card-top">
+              <div class="project-head analytics-card-preview">
+                <h2>Python data analytics</h2>
+                <p class="project-subtitle"><strong>Jupyter notebook figures</strong></p>
+                <p>Four notebook-based analyses with interactive figure carousels.</p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary analytics-toggle"
+                aria-expanded="false"
+                aria-controls="analytics-expandable-portfolio"
+              >
+                Expand
+              </button>
+            </div>
+            <div id="analytics-expandable-portfolio" class="analytics-expandable-body" hidden>
+            <p class="card-lead">
+              Exports from Python notebooks (PNG), zero-padded names in each folder:
+              <code>notebook-1</code> (11 images), <code>notebook-2</code> and <code>notebook-3</code> (5 each),
+              <code>notebook-4</code> (4)—e.g. <code>01.png</code>, <code>02.png</code>, …
+            </p>
+
+            <div class="analytics-notebook-list">
+              <section class="analytics-notebook" aria-labelledby="nb-title-1">
+                <h3 class="analytics-notebook-title" id="nb-title-1">Notebook project 1</h3>
+                <p class="analytics-notebook-desc">Rename this title; add eleven PNGs to <code>notebook-1/</code> (<code>01.png</code>–<code>11.png</code>).</p>
+                <div
+                  class="notebook-carousel"
+                  data-notebook-carousel
+                  tabindex="0"
+                  role="region"
+                  aria-roledescription="carousel"
+                  aria-label="Notebook project 1 figures"
+                >
+                  <div class="notebook-carousel-viewport" aria-live="polite">
+                    <img class="notebook-slide is-active" src="./assets/images/python-analytics/notebook-1/01.png" alt="Notebook project 1 — figure 1 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/02.png" alt="Notebook project 1 — figure 2 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/03.png" alt="Notebook project 1 — figure 3 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/04.png" alt="Notebook project 1 — figure 4 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/05.png" alt="Notebook project 1 — figure 5 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/06.png" alt="Notebook project 1 — figure 6 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/07.png" alt="Notebook project 1 — figure 7 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/08.png" alt="Notebook project 1 — figure 8 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/09.png" alt="Notebook project 1 — figure 9 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/10.png" alt="Notebook project 1 — figure 10 of 11" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-1/11.png" alt="Notebook project 1 — figure 11 of 11" />
+                  </div>
+                  <div class="notebook-carousel-toolbar">
+                    <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous figure">← Prev</button>
+                    <span class="notebook-carousel-counter"><span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">11</span></span>
+                    <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next figure">Next →</button>
+                  </div>
+                  <div class="notebook-carousel-dots" aria-label="Jump to figure"></div>
+                  <p class="notebook-carousel-hint">Tip: focus this carousel and use ← → for figures; zoom and pan use the controls above.</p>
+                </div>
+              </section>
+
+              <section class="analytics-notebook" aria-labelledby="nb-title-2">
+                <h3 class="analytics-notebook-title" id="nb-title-2">Notebook project 2</h3>
+                <p class="analytics-notebook-desc">Rename this title; add five PNGs to <code>notebook-2/</code> (<code>01.png</code>–<code>05.png</code>).</p>
+                <div
+                  class="notebook-carousel"
+                  data-notebook-carousel
+                  tabindex="0"
+                  role="region"
+                  aria-roledescription="carousel"
+                  aria-label="Notebook project 2 figures"
+                >
+                  <div class="notebook-carousel-viewport" aria-live="polite">
+                    <img class="notebook-slide is-active" src="./assets/images/python-analytics/notebook-2/01.png" alt="Notebook project 2 — figure 1 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-2/02.png" alt="Notebook project 2 — figure 2 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-2/03.png" alt="Notebook project 2 — figure 3 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-2/04.png" alt="Notebook project 2 — figure 4 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-2/05.png" alt="Notebook project 2 — figure 5 of 5" />
+                  </div>
+                  <div class="notebook-carousel-toolbar">
+                    <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous figure">← Prev</button>
+                    <span class="notebook-carousel-counter"><span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">5</span></span>
+                    <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next figure">Next →</button>
+                  </div>
+                  <div class="notebook-carousel-dots" aria-label="Jump to figure"></div>
+                  <p class="notebook-carousel-hint">Tip: focus this carousel and use ← → for figures; zoom and pan use the controls above.</p>
+                </div>
+              </section>
+
+              <section class="analytics-notebook" aria-labelledby="nb-title-3">
+                <h3 class="analytics-notebook-title" id="nb-title-3">Notebook project 3</h3>
+                <p class="analytics-notebook-desc">Rename this title; add five PNGs to <code>notebook-3/</code> (<code>01.png</code>–<code>05.png</code>).</p>
+                <div
+                  class="notebook-carousel"
+                  data-notebook-carousel
+                  tabindex="0"
+                  role="region"
+                  aria-roledescription="carousel"
+                  aria-label="Notebook project 3 figures"
+                >
+                  <div class="notebook-carousel-viewport" aria-live="polite">
+                    <img class="notebook-slide is-active" src="./assets/images/python-analytics/notebook-3/01.png" alt="Notebook project 3 — figure 1 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-3/02.png" alt="Notebook project 3 — figure 2 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-3/03.png" alt="Notebook project 3 — figure 3 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-3/04.png" alt="Notebook project 3 — figure 4 of 5" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-3/05.png" alt="Notebook project 3 — figure 5 of 5" />
+                  </div>
+                  <div class="notebook-carousel-toolbar">
+                    <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous figure">← Prev</button>
+                    <span class="notebook-carousel-counter"><span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">5</span></span>
+                    <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next figure">Next →</button>
+                  </div>
+                  <div class="notebook-carousel-dots" aria-label="Jump to figure"></div>
+                  <p class="notebook-carousel-hint">Tip: focus this carousel and use ← → for figures; zoom and pan use the controls above.</p>
+                </div>
+              </section>
+
+              <section class="analytics-notebook" aria-labelledby="nb-title-4">
+                <h3 class="analytics-notebook-title" id="nb-title-4">Notebook project 4</h3>
+                <p class="analytics-notebook-desc">Rename this title; add four PNGs to <code>notebook-4/</code> (<code>01.png</code>–<code>04.png</code>).</p>
+                <div
+                  class="notebook-carousel"
+                  data-notebook-carousel
+                  tabindex="0"
+                  role="region"
+                  aria-roledescription="carousel"
+                  aria-label="Notebook project 4 figures"
+                >
+                  <div class="notebook-carousel-viewport" aria-live="polite">
+                    <img class="notebook-slide is-active" src="./assets/images/python-analytics/notebook-4/01.png" alt="Notebook project 4 — figure 1 of 4" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-4/02.png" alt="Notebook project 4 — figure 2 of 4" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-4/03.png" alt="Notebook project 4 — figure 3 of 4" />
+                    <img class="notebook-slide" src="./assets/images/python-analytics/notebook-4/04.png" alt="Notebook project 4 — figure 4 of 4" />
+                  </div>
+                  <div class="notebook-carousel-toolbar">
+                    <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous figure">← Prev</button>
+                    <span class="notebook-carousel-counter"><span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">4</span></span>
+                    <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next figure">Next →</button>
+                  </div>
+                  <div class="notebook-carousel-dots" aria-label="Jump to figure"></div>
+                  <p class="notebook-carousel-hint">Tip: focus this carousel and use ← → for figures; zoom and pan use the controls above.</p>
+                </div>
+              </section>
+            </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="personal-projects">
+        <div class="section-head">
+          <h2>Personal Projects</h2>
+          <p>Selected builds and experiments beyond day-to-day analytics.</p>
+        </div>
+        <div class="grid cards">
+          <article
+            class="card card-span-full analytics-expandable-card personal-project-card"
+            data-analytics-expandable
+            style="--personal-preview: url('./assets/images/personal-projects/digital-table-preview.gif')"
+          >
+            <span class="sr-only">Animated preview in card background.</span>
+            <div class="analytics-card-top">
+              <div class="project-head analytics-card-preview">
+                <h2>Digital Table Project</h2>
+                <p class="project-subtitle"><strong>Physical / digital build</strong></p>
+                <p>Interactive table concept — expand for details.</p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary analytics-toggle"
+                aria-expanded="false"
+                aria-controls="pp-digital-table-expandable"
+              >
+                Expand
+              </button>
+            </div>
+            <div id="pp-digital-table-expandable" class="analytics-expandable-body" hidden>
+              <h3 class="r-preview-heading">Overview video</h3>
+              <video class="project-video" controls preload="metadata" playsinline>
+                <source src="./assets/videos/digital-table-project.mp4" type="video/mp4" />
+                Your browser does not support embedded videos.
+              </video>
+
+              <section class="digital-table-brief" aria-label="Problem, need, and solution">
+                <h4 class="r-preview-heading digital-table-brief-heading">Problem</h4>
+                <p>
+                  I play tabletop role-playing games (TTRPG), like Dungeons &amp; Dragons, with friends. The problem with
+                  typical dungeon tiles and maps is their limited variety. If I wanted to make a snow map, the physical
+                  terrain pieces would take several days to create and would only be relevant for encounters featuring snow.
+                </p>
+                <h4 class="r-preview-heading digital-table-brief-heading">Need</h4>
+                <p>
+                  TTRPGs require unique battle-maps that can adapt to a variety of unique scenarios such as deserts, sewers,
+                  mountains, and more.
+                </p>
+                <h4 class="r-preview-heading digital-table-brief-heading">Solution</h4>
+                <p>
+                  A digital table constructed with a horizontal TV screen can project virtual maps to a physical space. Digital
+                  maps can be made in a fraction of the time or can be bought and downloaded from online creators.
+                </p>
+              </section>
+
+              <h3 class="r-preview-heading personal-project-gallery-heading">Process gallery</h2>
+              <div
+                class="notebook-carousel"
+                data-notebook-carousel
+                tabindex="0"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="Digital Table Project process photos"
+              >
+                <div class="notebook-carousel-viewport" aria-live="polite">
+                  <img
+                    class="notebook-slide is-active"
+                    src="./assets/images/personal-projects/digital-table/01.png"
+                    alt="Digital Table — photo 1 of 10"
+                    data-slide-caption="Step 1 — Internals stripped from a circular wooden gaming table.
+                    Plastic exterior shell removed from TV to fit inside and reduce heat insulation from electronics."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/02.png"
+                    alt="Digital Table — photo 2 of 10"
+                    data-slide-caption="Step 2 — To accommodate for wood lid, edges of the table were built up with 2x4” wood planks, cut to fit around table edge. 
+                    Circular cover (standing in background) cut from 1/2 inch wood to the shape of table edge and TV shape."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/03.png"
+                    alt="Digital Table — photo 3 of 10"
+                    data-slide-caption="Step 3 — To secure the TV, 2x4” planks machine screwed into threaded holes (intended for TV mounts) on back of TV.
+                    Planks then fastened onto table with wood screws from underneath."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/04.png"
+                    alt="Digital Table — photo 4 of 10"
+                    data-slide-caption="Step 4 — Framed lid secured to table with construction adhesive and base coated with charcoal black paint.                    
+                    (Note: newspaper masked canvas is for an unrelated art project made from a wolf shaped puzzle)"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/05.png"
+                    alt="Digital Table — photo 5 of 10"
+                    data-slide-caption="Step 5 — White paint mixed with glow in the dark paint. Paint flicked and splattered from end of chip
+                    brush to create galaxy inspired pattern design."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/06.png"
+                    alt="Digital Table — photo 6 of 10"
+                    data-slide-caption="Step 6 — Once paint dried, surface then coated in a gloss varnish to darken appearance and create a protective surface for the
+                    expected use of play."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/07.jpg"
+                    alt="Digital Table — photo 7 of 10"
+                    data-slide-caption="Table Mode — With a smooth dark wood 1.25”
+                    table lid placed on top, the
+                    table can operate as a 4 foot
+                    wide circular dining table."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/08.jpg"
+                    alt="Digital Table — photo 8 of 10"
+                    data-slide-caption="Poker Mode — Flipping the table lid reveals a
+                    green felt poker table with cup
+                    holders and tray spaces for
+                    up to eight players."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/09.jpg"
+                    alt="Digital Table — photo 9 of 10"
+                    data-slide-caption="Gaming Mode — With lid removed and HDMI
+                    connected, audio and video
+                    play from the digital tabletop."
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/digital-table/10.jpg"
+                    alt="Digital Table — photo 10 of 10"
+                    data-slide-caption="A pane of glass covers the TV to protect it from use of
+                    play. The glass rests on each of four corners atop 2x4’s
+                    to offset load from weight placed on surface. The glass
+                    is easy to replace since Home Depot sells the 24x36”"
+                  />
+                </div>                
+                <p class="notebook-carousel-caption" aria-live="polite"></p>
+                <div class="notebook-carousel-toolbar">
+                  <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous image">← Prev</button>
+                  <span class="notebook-carousel-counter">
+                    <span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">10</span>
+                  </span>
+                  <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next image">Next →</button>
+                </div>
+                <div class="notebook-carousel-dots" aria-label="Jump to image"></div>
+                <p class="notebook-carousel-hint">
+                  Tip: focus this carousel and use ← → for images; zoom and pan use the controls above.
+                </p>
+                
+                <section class="digital-table-brief digital-table-brief-following" aria-label="Overview, limitations, and improvements" style="color: white; margin-left: 2em;">
+                  <h4 class="r-preview-heading digital-table-brief-heading" style="color: white;">Limitations</h4>
+                  <p style="color: white;">
+                    The screen takes up most of the table space, leaving little room for people&apos;s elbows or materials needed
+                    to play the intended game (dice, character sheets, laptops), especially with 5 to 8 players. Turning the TV
+                    on requires crawling under the table and reaching up through a 3&quot; hole. Materials and weight are loaded
+                    on top of table legs originally designed for less weight.
+                  </p>
+                  <br>
+                  <h4 class="r-preview-heading digital-table-brief-heading" style="color: white;">Improvements</h4>
+                  <p style="color: white;">
+                    The next iteration would work better on a rectangular surface with a larger screen. The enclosure also does
+                    not need to be completely sealed, and would require and benefit from fewer materials.
+                    <br><br>
+                  </p>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="card card-span-full analytics-expandable-card personal-project-card"
+            data-analytics-expandable
+            style="--personal-preview: url('./assets/images/personal-projects/3d-printed-miniatures-preview.gif')"
+          >
+            <span class="sr-only">Animated preview in card background.</span>
+            <div class="analytics-card-top">
+              <div class="project-head analytics-card-preview">
+                <h2>3D Printed Miniatures</h2>
+                <p class="project-subtitle"><strong>Painting &amp; fabrication</strong></p>
+                <p>Painted and 3D printed miniatures at 25mm scale — expand for details.</p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary analytics-toggle"
+                aria-expanded="false"
+                aria-controls="pp-3d-miniatures-expandable"
+              >
+                Expand
+              </button>
+            </div>
+            <div id="pp-3d-miniatures-expandable" class="analytics-expandable-body" hidden>
+              <h3 class="r-preview-heading">Gallery</h3>
+              <p class="analytics-notebook-desc">
+                JPGs in <code>assets/images/personal-projects/3d-printed-miniatures/</code> as
+                <code>01.jpg</code>–<code>13.jpg</code>.
+              </p>
+              <div
+                class="notebook-carousel"
+                data-notebook-carousel
+                tabindex="0"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="3D printed miniatures gallery"
+              >
+                <div class="notebook-carousel-viewport" aria-live="polite">
+                  <img
+                    class="notebook-slide is-active"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/01.jpg"
+                    alt="3D printed miniature — image 1 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/02.jpg"
+                    alt="3D printed miniature — image 2 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/03.jpg"
+                    alt="3D printed miniature — image 3 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/04.jpg"
+                    alt="3D printed miniature — image 4 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/05.jpg"
+                    alt="3D printed miniature — image 5 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/06.jpg"
+                    alt="3D printed miniature — image 6 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/07.jpg"
+                    alt="3D printed miniature — image 7 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/08.jpg"
+                    alt="3D printed miniature — image 8 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/09.jpg"
+                    alt="3D printed miniature — image 9 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/10.jpg"
+                    alt="3D printed miniature — image 10 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/11.jpg"
+                    alt="3D printed miniature — image 11 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/12.jpg"
+                    alt="3D printed miniature — image 12 of 13"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/3d-printed-miniatures/13.jpg"
+                    alt="3D printed miniature — image 13 of 13"
+                  />
+                </div>
+                <div class="notebook-carousel-toolbar">
+                  <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous image">← Prev</button>
+                  <span class="notebook-carousel-counter">
+                    <span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">13</span>
+                  </span>
+                  <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next image">Next →</button>
+                </div>
+                <div class="notebook-carousel-dots" aria-label="Jump to image"></div>
+                <p class="notebook-carousel-hint">
+                  Tip: focus this carousel and use ← → for images; zoom and pan use the controls above.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="card card-span-full analytics-expandable-card personal-project-card"
+            data-analytics-expandable
+            style="--personal-preview: url('./assets/images/personal-projects/illustration-preview.gif')"
+          >
+            <span class="sr-only">Animated preview in card background.</span>
+            <div class="analytics-card-top">
+              <div class="project-head analytics-card-preview">
+                <h2>Illustration</h2>
+                <p class="project-subtitle"><strong>Visual work</strong></p>
+                <p>Sketches and illustrations — expand for details.</p>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary analytics-toggle"
+                aria-expanded="false"
+                aria-controls="pp-illustration-expandable"
+              >
+                Expand
+              </button>
+            </div>
+            <div id="pp-illustration-expandable" class="analytics-expandable-body" hidden>
+              <h3 class="r-preview-heading">Gallery</h3>
+              <p class="analytics-notebook-desc">
+                JPGs in <code>assets/images/personal-projects/illustration/</code> as
+                <code>01.jpg</code>–<code>17.jpg</code>.
+              </p>
+              <div
+                class="notebook-carousel"
+                data-notebook-carousel
+                tabindex="0"
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="Illustration gallery"
+              >
+                <div class="notebook-carousel-viewport" aria-live="polite">
+                  <img
+                    class="notebook-slide is-active"
+                    src="./assets/images/personal-projects/illustration/01.jpg"
+                    alt="Illustration — image 1 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/02.jpg"
+                    alt="Illustration — image 2 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/03.jpg"
+                    alt="Illustration — image 3 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/04.jpg"
+                    alt="Illustration — image 4 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/05.jpg"
+                    alt="Illustration — image 5 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/06.jpg"
+                    alt="Illustration — image 6 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/07.jpg"
+                    alt="Illustration — image 7 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/08.jpg"
+                    alt="Illustration — image 8 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/09.jpg"
+                    alt="Illustration — image 9 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/10.jpg"
+                    alt="Illustration — image 10 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/11.jpg"
+                    alt="Illustration — image 11 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/12.jpg"
+                    alt="Illustration — image 12 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/13.jpg"
+                    alt="Illustration — image 13 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/14.jpg"
+                    alt="Illustration — image 14 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/15.jpg"
+                    alt="Illustration — image 15 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/16.jpg"
+                    alt="Illustration — image 16 of 17"
+                  />
+                  <img
+                    class="notebook-slide"
+                    src="./assets/images/personal-projects/illustration/17.jpg"
+                    alt="Illustration — image 17 of 17"
+                  />
+                </div>
+                <div class="notebook-carousel-toolbar">
+                  <button type="button" class="btn btn-ghost notebook-carousel-prev" aria-label="Previous image">← Prev</button>
+                  <span class="notebook-carousel-counter">
+                    <span class="notebook-carousel-current">1</span> / <span class="notebook-carousel-total">17</span>
+                  </span>
+                  <button type="button" class="btn btn-ghost notebook-carousel-next" aria-label="Next image">Next →</button>
+                </div>
+                <div class="notebook-carousel-dots" aria-label="Jump to image"></div>
+                <p class="notebook-carousel-hint">
+                  Tip: focus this carousel and use ← → for images; zoom and pan use the controls above.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Timmy Sheppel. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
