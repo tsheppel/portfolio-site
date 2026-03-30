@@ -27,6 +27,7 @@ Notes
 -----
 - Large videos/binary assets count toward repo limits; Git LFS is optional for big files.
 - PowerPoint/Office embeds need this HTTPS URL to load (not file://).
+- GitHub Pages runs on Linux: file names are case-sensitive (e.g. .JPG vs .jpg must match your HTML).
 - First-time git on this PC: run once
     git config --global user.name "Your Name"
     git config --global user.email "you@example.com"
