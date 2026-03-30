@@ -452,4 +452,18 @@ function initAnalyticsExpandable() {
   });
 }
 
+function initPersonalProjectPreviewBackgrounds() {
+  document.querySelectorAll(".personal-project-card[data-personal-preview]").forEach((card) => {
+    const rel = card.getAttribute("data-personal-preview");
+    if (!rel) return;
+    try {
+      const abs = new URL(rel, window.location.href).href;
+      card.style.setProperty("--personal-preview", `url("${abs}")`);
+    } catch {
+      /* ignore invalid base */
+    }
+  });
+}
+
+initPersonalProjectPreviewBackgrounds();
 initAnalyticsExpandable();
