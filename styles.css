@@ -80,7 +80,35 @@ code {
   color: var(--text);
 }
 
-.hero {
+.hero-wrap {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero-banner {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(245, 246, 248, 1) 0%,
+      rgba(245, 246, 248, 0.96) 28%,
+      rgba(245, 246, 248, 0.72) 48%,
+      rgba(245, 246, 248, 0.28) 72%,
+      rgba(245, 246, 248, 0) 100%
+    ),
+    url("./assets/images/hero-banner.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.hero-wrap .hero {
+  position: relative;
+  z-index: 1;
   padding: 7rem 0 3.5rem;
 }
 
@@ -740,7 +768,19 @@ h2 {
     transform: translateY(0);
   }
 
-  .hero {
+  .hero-wrap .hero {
     padding-top: 5.2rem;
+  }
+
+  .hero-banner {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(245, 246, 248, 0.94) 0%,
+        rgba(245, 246, 248, 0.82) 42%,
+        rgba(245, 246, 248, 0.45) 100%
+      ),
+      url("./assets/images/hero-banner.jpg");
+    background-position: center;
   }
 }
