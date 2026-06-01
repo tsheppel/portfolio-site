@@ -102,7 +102,7 @@ code {
     ),
     url("./assets/images/hero-banner.jpg");
   background-size: cover;
-  background-position: center right;
+  background-position: right top;
   background-repeat: no-repeat;
 }
 
@@ -781,6 +781,6 @@ h2 {
         rgba(245, 246, 248, 0.45) 100%
       ),
       url("./assets/images/hero-banner.jpg");
-    background-position: center;
+    background-position: center top;
   }
 }
