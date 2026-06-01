@@ -42,19 +42,26 @@
 
       <section class="section container">
         <div class="resume-actions">
-          <a class="btn btn-primary" href="./assets/documents/resume.pdf" download>Download PDF</a>
+          <a
+            class="btn btn-primary"
+            href="./assets/documents/resume.pdf"
+            data-resume-link
+            download
+          >Download PDF</a>
           <a
             class="btn btn-ghost"
             href="./assets/documents/resume.pdf"
+            data-resume-link
             target="_blank"
             rel="noopener noreferrer"
-            >Open PDF in new tab</a>
+          >Open PDF in new tab</a>
         </div>
         <div class="resume-pdf-wrap">
           <iframe
             class="resume-pdf"
-            title="Timmy Sheppel resume (PDF)"
-            src="./assets/documents/resume.pdf"
+            title="Tim Sheppel resume (PDF)"
+            data-resume-src="./assets/documents/resume.pdf"
+            data-resume-version="2"
           ></iframe>
         </div>
         <p class="resume-pdf-fallback">

@@ -465,5 +465,27 @@ function initPersonalProjectPreviewBackgrounds() {
   });
 }
 
+function initResumePdfPreview() {
+  const iframe = document.querySelector(".resume-pdf[data-resume-src]");
+  if (!iframe) return;
+
+  const rel = iframe.getAttribute("data-resume-src");
+  const version = iframe.getAttribute("data-resume-version") || "1";
+  if (!rel) return;
+
+  try {
+    const url = new URL(rel, window.location.href);
+    url.searchParams.set("v", version);
+    const abs = url.href;
+    iframe.src = abs;
+    document.querySelectorAll("[data-resume-link]").forEach((link) => {
+      link.href = abs;
+    });
+  } catch {
+    /* ignore invalid base */
+  }
+}
+
 initPersonalProjectPreviewBackgrounds();
+initResumePdfPreview();
 initAnalyticsExpandable();
