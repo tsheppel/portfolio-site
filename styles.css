@@ -100,7 +100,7 @@ code {
       rgba(245, 246, 248, 0.28) 72%,
       rgba(245, 246, 248, 0) 100%
     ),
-    url("./assets/images/hero-banner.jpg");
+    url("./assets/images/hero-banner.jpg?v=2");
   background-size: cover;
   background-position: right top;
   background-repeat: no-repeat;
@@ -780,7 +780,7 @@ h2 {
         rgba(245, 246, 248, 0.82) 42%,
         rgba(245, 246, 248, 0.45) 100%
       ),
-      url("./assets/images/hero-banner.jpg");
+      url("./assets/images/hero-banner.jpg?v=2");
     background-position: center top;
   }
 }
